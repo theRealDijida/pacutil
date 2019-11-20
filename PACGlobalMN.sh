@@ -4,8 +4,8 @@ set -e
 
 export LC_ALL="en_US.UTF-8"
 
-binary_url="https://github.com/PACGlobalOfficial/PAC/releases/download/8efaee16f/pacglobal-8efaee16f-lin64.tgz"
-file_name="pacglobal-8efaee16f-lin64"
+binary_url="https://github.com/PACGlobalOfficial/PAC/releases/download/035d4df02/pacglobal-035d4df02-lin64.tgz"
+file_name="pacglobal-035d4df02-lin64"
 extension=".tgz"
 
 echo ""
@@ -119,12 +119,7 @@ echo "masternode=1" >> pacglobal.conf
 echo "masternodeblsprivkey=$mnkey" >> pacglobal.conf
 echo "externalip=$ipaddr" >> pacglobal.conf
 echo "#----" >> pacglobal.conf
-echo "addnode=seed0.pacglobal.io" >> pacglobal.conf
-echo "addnode=seed1.pacglobal.io" >> pacglobal.conf
-echo "addnode=seed2.pacglobal.io" >> pacglobal.conf
-echo "addnode=seed3.pacglobal.io" >> pacglobal.conf
-echo "addnode=seed0.pacnode.net" >> pacglobal.conf
-echo "addnode=seed1.pacnode.net" >> pacglobal.conf
+
 
 
 echo ""
@@ -137,27 +132,21 @@ cat <<EOF > /etc/systemd/system/pacg.service
 [Unit]
 Description=PAC Global daemon
 After=network.target
-
 [Service]
 User=root
 Group=root
-
 Type=forking
 PIDFile=/root/.PACGlobal/pacglobal.pid
-
 ExecStart=/root/PACGlobal/pacglobald -daemon -pid=/root/.PACGlobal/pacglobal.pid \
           -conf=/root/.PACGlobal/pacglobal.conf -datadir=/root/.PACGlobal/
-
 ExecStop=-/root/PACGlobal/pacglobal-cli -conf=/root/.PACGlobal/pacglobal.conf \
           -datadir=/root/.PACGlobal/ stop
-
 Restart=always
 PrivateTmp=true
 TimeoutStopSec=60s
 TimeoutStartSec=2s
 StartLimitInterval=120s
 StartLimitBurst=5
-
 [Install]
 WantedBy=multi-user.target
 EOF
