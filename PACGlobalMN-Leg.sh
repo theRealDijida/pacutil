@@ -144,7 +144,7 @@ ExecStop=-/root/PACGlobal/pacglobal-cli -conf=/root/.PACGlobal/pacglobal.conf \
 Restart=always
 PrivateTmp=true
 TimeoutStopSec=60s
-TimeoutStartSec=2s
+TimeoutStartSec=10s
 StartLimitInterval=120s
 StartLimitBurst=5
 [Install]
@@ -166,7 +166,7 @@ echo "#      Running the wallet     #"
 echo "###############################"
 echo ""
 cd ~/PACGlobal
-sleep 60
+sleep 10
 
 is_pac_running=`ps ax | grep -v grep | grep pacglobald | wc -l`
 if [ $is_pac_running -eq 0 ]; then
