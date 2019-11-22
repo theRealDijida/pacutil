@@ -85,9 +85,9 @@ check_crete_swap()
 
 download_binaries()
 {
-	binary_url="https://github.com/PACGlobalOfficial/PAC/releases/download/${version}/pacglobal-${version}-lin64.tgz"
+	binary_url="https://github.com/PACGlobalOfficial/PAC/releases/download/${version}/pacglobal-${version}-legacylin64.tgz"
 	
-	tarball_name="pacglobal-${version}-lin64.tgz"
+	tarball_name="pacglobal-${version}-legacylin64.tgz"
 	
 	
 	mkdir -p $INSTALL_DIR
