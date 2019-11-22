@@ -37,7 +37,7 @@ echo "Starting PAC Global Service"
 
 systemctl start pacg.service
 
-sleep 5
+sleep 10
 
 echo "################################################"
 echo "#             Update Complete     	     #"
