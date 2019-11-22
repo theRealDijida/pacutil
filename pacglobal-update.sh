@@ -175,8 +175,8 @@ run_systemd_service()
 	echo "==> Remember to go to your cold wallet and start the masternode, cold wallet must also be on the latest version (${version})."
 }
 
-stop_paccoin
-find_paccoin_data_dir
+stop_pacglobal
+find_pacglobal_data_dir
 download_binaries
 check_crete_swap
 backup_wallet
