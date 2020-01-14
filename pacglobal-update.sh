@@ -23,11 +23,11 @@ systemctl stop pacg.service
 
 echo "Downloading binaries and unpacking"
 
-wget https://github.com/PACGlobalOfficial/PAC/releases/download/035d4df02/pacglobal-035d4df02-legacylin64.tgz
+wget binary_url="https://github.com/PACGlobalOfficial/PAC/releases/download/v0.14.0.6/pacglobal-v0.14.0.6-lin64.tgz"
 
-tar -xzf pacglobal-035d4df02-legacylin64.tgz
+tar -xzf pacglobal-v0.14.0.6-lin64.tgz
 
-mv pacglobal-035d4df02-legacylin64/* PACGlobal
+mv pacglobal-v0.14.0.6-lin64/* PACGlobal
 
 rm pacglobal-035d4df02-legacylin64.tgz 
 rm -R pacglobal-035d4df02-legacylin64/
