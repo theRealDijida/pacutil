@@ -24,17 +24,6 @@ if [ -e /root/PACGlobal/pacglobald ]; then
             fi
 fi
 sleep 3
-echo ""
-echo "###################################"
-echo "#  Updating the operating system  #"
-echo "###################################"
-echo ""
-echo "Running this script on Ubuntu 18.04 LTS or newer is highly recommended."
-echo ""
-sleep 3
-
-sudo apt-get -y update
-sudo apt-get -y upgrade
 
 echo ""
 echo "Stopping the pacg service"
