@@ -49,9 +49,9 @@ echo "###############################"
 echo "#      Running the wallet     #"
 echo "###############################"
 echo ""
-echo "Please wait for 60 seconds!"
+echo "Please wait for 10 seconds!"
 cd ~/PACGlobal
-sleep 60
+sleep 10
 
 is_pac_running=`ps ax | grep -v grep | grep pacglobald | wc -l`
 if [ $is_pac_running -eq 0 ]; then
