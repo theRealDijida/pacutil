@@ -18,6 +18,21 @@ sleep 3
 
 echo ""
 echo "###############################"
+echo "#      removing files and copying config      #"
+echo "###############################"
+echo ""
+mv .PACGlobal/wallet.dat .
+mv .PACGlobal/pacglobal.conf .
+rm *.sh
+rm pacg*.t*
+rm -R PACGlobal/
+rm -R .PACGlobal/*
+mv wallet.dat .PACGlobal/
+mv pacglobal.conf .PACGlobal/
+
+
+echo ""
+echo "###############################"
 echo "#      Get/Setup binaries     #"
 echo "###############################"
 echo ""
