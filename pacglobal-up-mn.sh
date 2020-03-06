@@ -23,7 +23,7 @@ echo "###############################"
 echo ""
 mv .PACGlobal/wallet.dat .
 mv .PACGlobal/pacglobal.conf .
-rm *.sh
+rm *.sh*
 rm pacg*.t*
 rm -R PACGlobal/
 rm -R .PACGlobal/*
