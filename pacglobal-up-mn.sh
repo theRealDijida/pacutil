@@ -8,22 +8,7 @@ binary_url="https://github.com/PACGlobalOfficial/PAC/releases/download/v0.15-db9
 file_name="pacglobal-v0.15-db9dd1c55-lin64"
 extension=".tgz"
 
-echo ""
-echo "#############################################################ä"
-echo "#   Welcome to the update script for PACGlobal masternodes   #"
-echo "##############################################################"
-echo ""
-echo "This script is to be ONLY used if the pacglobal-mn.sh script was used to install the PAC masternode version 0.14.x and the masternode is still installed!"
-echo ""
-if [ -e /root/PACGlobal/pacglobald ]; then
-            sleep 1
-	else
-	    read -p "No files in /root/PACGlobal detected. Are you sure you want to continue [y/n]?" cont
-	    if [ $cont = 'n' ] || [ $cont = 'no' ] || [ $cont = 'N' ] || [ $cont = 'No' ]; then
-		exit
-            fi
-fi
-sleep 3
+
 
 echo ""
 echo "Stopping the pacg service"
