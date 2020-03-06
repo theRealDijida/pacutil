@@ -18,7 +18,7 @@ sleep 3
 
 echo ""
 echo "###############################"
-echo "#      removing files and copying config #"
+echo "# removing files and copying config #"
 echo "###############################"
 echo ""
 mv .PACGlobal/wallet.dat .
