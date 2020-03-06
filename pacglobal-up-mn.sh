@@ -29,6 +29,20 @@ rm -R .PACGlobal/*
 mv wallet.dat .PACGlobal/
 mv pacglobal.conf .PACGlobal/
 
+echo "addnode=88.99.37.107:7112" >> ./.PACGlobal/pacglobal.conf
+echo "addnode=140.82.19.195:7112" >> ./.PACGlobal/pacglobal.conf
+echo "addnode=167.86.124.228:7112" >> ./.PACGlobal/pacglobal.conf
+echo "addnode=116.203.85.3:7112" >> ./.PACGlobal/pacglobal.conf
+echo "addnode=88.198.74.72:7112" >> ./.PACGlobal/pacglobal.conf
+echo "addnode=138.201.93.240:7112" >> ./.PACGlobal/pacglobal.conf
+
+echo "addnode=seed0.pacglobal.io" >> ./.PACGlobal/pacglobal.conf
+echo "addnode=seed1.pacglobal.io" >> ./.PACGlobal/pacglobal.conf
+echo "addnode=seed2.pacglobal.io" >> ./.PACGlobal/pacglobal.conf
+echo "addnode=seed3.pacglobal.io" >> ./.PACGlobal/pacglobal.conf
+echo "addnode=seed0.pacnode.net" >> ./.PACGlobal/pacglobal.conf
+echo "addnode=seed1.pacnode.net" >> ./.PACGlobal/pacglobal.conf
+
 
 echo ""
 echo "###############################"
