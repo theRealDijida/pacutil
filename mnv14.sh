@@ -120,7 +120,19 @@ echo "masternode=1" >> pacglobal.conf
 echo "masternodeblsprivkey=$mnkey" >> pacglobal.conf
 echo "externalip=$ipaddr" >> pacglobal.conf
 echo "#----" >> pacglobal.conf
+echo "addnode=88.99.37.107:7112" >> pacglobal.conf
+echo "addnode=140.82.19.195:7112" >> pacglobal.conf
+echo "addnode=167.86.124.228:7112" >> pacglobal.conf
+echo "addnode=116.203.85.3:7112" >> pacglobal.conf
+echo "addnode=88.198.74.72:7112" >> pacglobal.conf
+echo "addnode=138.201.93.240:7112" >> pacglobal.conf
 
+echo "addnode=seed0.pacglobal.io" >> pacglobal.conf
+echo "addnode=seed1.pacglobal.io" >> pacglobal.conf
+echo "addnode=seed2.pacglobal.io" >> pacglobal.conf
+echo "addnode=seed3.pacglobal.io" >> pacglobal.conf
+echo "addnode=seed0.pacnode.net" >> pacglobal.conf
+echo "addnode=seed1.pacnode.net" >> pacglobal.conf
 
 
 echo ""
