@@ -41,9 +41,3 @@ sudo mkswap /swapfile
 sudo swapon /swapfile
 
 systemctl start pacg.service
-
-sleep 5
-
-PACGlobal/pacglobal-cli getinfo
-PACGlobal/pacglobal-cli masternode status
-PACGlobal/pacglobal-cli mnsync status
