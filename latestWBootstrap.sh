@@ -219,9 +219,9 @@ echo "###############################"
 echo "#      Running the wallet     #"
 echo "###############################"
 echo ""
-echo "Please wait for 60 seconds!"
+echo "Please wait for 10 seconds!"
 echo ""
-sleep 60
+sleep 10
 is_pac_running=`ps ax | grep -v grep | grep pacglobald | wc -l`
 if [ $is_pac_running -eq 0 ]; then
 	echo "The daemon is not running or there is an issue, please restart the daemon!"
