@@ -177,7 +177,7 @@ echo "#     Unpacking Bootstrap             #"
 echo "#######################################"
 
 cd ~
-tar -xzvf Bootstrap.tar.gz
+tar -xzvf Bootstrap.tar.gz -C ~/.PACGlobal
 rm Bootstrap.tar.gz
 
 echo ""
