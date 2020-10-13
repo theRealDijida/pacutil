@@ -239,4 +239,3 @@ echo "~/PACGlobal/pacglobal-cli getblockcount"
 echo "~/PACGlobal/pacglobal-cli masternode status"
 echo "~/PACGlobal/pacglobal-cli mnsync status"
 echo ""
-© 20
