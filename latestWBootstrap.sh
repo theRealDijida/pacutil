@@ -234,8 +234,8 @@ echo ""
 echo "Your masternode wallet on the server has been setup and will be ready when the synchronization is done!"
 echo ""
 echo "Please execute following commands to check the status of your masternode:"
-echo "~/PACGlobal/pacglobal-cli -version"
-echo "~/PACGlobal/pacglobal-cli getblockcount"
-echo "~/PACGlobal/pacglobal-cli masternode status"
-echo "~/PACGlobal/pacglobal-cli mnsync status"
+~/PACGlobal/pacglobal-cli -version
+~/PACGlobal/pacglobal-cli getblockcount
+~/PACGlobal/pacglobal-cli masternode status
+~/PACGlobal/pacglobal-cli mnsync status
 echo ""
