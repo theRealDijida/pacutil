@@ -29,7 +29,8 @@ echo ""
 echo "Running this script as root on Ubuntu 18.04 LTS or newer is highly recommended."
 echo "Please note that this script will try to configure 6 GB of swap - the combined value of memory and swap should be at least 7 GB. Use the command 'free -h' to check the values (under 'Total')." 
 echo ""
-sleep 10
+# sleep 10
+
 ipaddr="$(dig +short myip.opendns.com @resolver1.opendns.com)"
 while [[ $ipaddr = '' ]] || [[ $ipaddr = ' ' ]]; do
 	read -p 'Unable to find an external IP, please provide one: ' ipaddr
@@ -221,7 +222,8 @@ echo "###############################"
 echo ""
 echo "Please wait for 10 seconds!"
 echo ""
-sleep 10
+sleep 20
+
 is_pac_running=`ps ax | grep -v grep | grep pacglobald | wc -l`
 if [ $is_pac_running -eq 0 ]; then
 	echo "The daemon is not running or there is an issue, please restart the daemon!"
@@ -229,11 +231,11 @@ if [ $is_pac_running -eq 0 ]; then
 	echo ""
 	exit
 fi
-~/PACGlobal/pacglobal-cli mnsync status
 echo ""
 echo "Your masternode wallet on the server has been setup and will be ready when the synchronization is done!"
 echo ""
 echo "Please execute following commands to check the status of your masternode:"
+
 ~/PACGlobal/pacglobal-cli -version
 ~/PACGlobal/pacglobal-cli getblockcount
 ~/PACGlobal/pacglobal-cli masternode status
