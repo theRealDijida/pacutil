@@ -45,6 +45,7 @@ if test -e "$file_name$extension"; then
 		echo ""
 		echo "Unpacking PACProtocol distribution"
 		sleep 3
+		rm -r -f PACProtocol
 		tar -xzvf $file_name$extension
 		rm -r $file_name$extension
 		mv -v $file_name PACProtocol
