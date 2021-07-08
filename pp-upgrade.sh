@@ -63,6 +63,16 @@ if test -e "$file_name$extension"; then
 fi
 cd ~
 
+#reindex
+echo "####################################"
+echo "#      Resetting Blockchain data    #"
+echo "####################################"
+cd
+~/PACProtocol ./pacprotocold -reindex
+echo "waiting 30 seconds"
+sleep 30
+~/PACProtocol ./pacprotocol-cli stop
+sleep 10
 
 #enable the service
 systemctl enable pac.service
